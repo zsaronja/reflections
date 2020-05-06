@@ -1,5 +1,5 @@
 How did viewing a diff between two versions of a file help you see the bug that was introduced?
-Differences in text, pinpoint the location of change that caused the bug.
+Differences in text pinpoint the location of change that caused the bug.
 
 How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
 I could create various versions of files and test the outcomes without rewriting all the time.
@@ -9,10 +9,13 @@ Con: You might commit too seldom
 Pro: You can choose the time to commit based on the units of work and functionality
 
 Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
-Because they are logicaly/functionaly connected and it makes sense to track them together.
+Version control systrems that are more suited to working with projects where a change can span across multiple files, allow multiple files in a single commit because they are logicaly/functionaly connected and it makes sense to track them together. Other version control systems are file oriented and do not expect for files to be dependent one on another.
 
 How can you use the commands git log and git diff to view the history of files?
-Git log shows me the commits made to the file and git diff shows differences between two files.
+Git log shows me the commits made to the file along with the user that made the changes, date that the changes were commited and message the user has added to the commit. The git diff shows differences between two files (additions and deletions).
 
 How might using version control make you more confident to make changes that could break something?
-If I break something, I can always return to the previous state and I don't have to wory much about making errors.
+If I break something, I can always return to the previous state and I don't have to wory much about introducing errors that I won't be able to fix.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+Working with code projects mostly. I could try to use it for my CV's.
