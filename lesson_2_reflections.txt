@@ -19,9 +19,12 @@ When adding a new ferature that is not critical and might take longer to be incl
 Also when multiple people make changes to the project at the same time.
 
 How do the diagrams help you visualize the branch structure?
+It is easier to see where the branches steam from and when are they merged in the master branch.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+The result is the commit that contains changes introduced in both branches, and that is why it is represented as two branches joining (merging) in one comnmit.
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+Automatic merging makes merging easier as it merges changes that were introduced and saves us some time. However there are cases that are not simple or are ambiguous so merge must be done manualy by someone who can decide which change should stay in the new version.
