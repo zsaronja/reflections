@@ -28,15 +28,17 @@ but contains more information about its source.
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
-
-    Fill in your answer here
+It avoids the possibility of conflicts and reduces the need to merge conflicts which can be a burden.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
+I'd have to copy the files that have been changed and would have to use a file comparisson tool.
+It would be much harder to keep track of all the changes and keep things consistent.
+It would be easier to copy the files to a location than to use GIT's commands but that is a small disadvantage.
 
-    Fill in your answer here
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
-
-    Fill in your answer here
+I want to make changes in different branch when someone else needs to review them or test them before commiting them to master branch.
+Also branches should be used whenever people work on the same project but different tasks and changes are needed on the same files or features.
+I want to make changes in master if it is a critical functionality or fix.
