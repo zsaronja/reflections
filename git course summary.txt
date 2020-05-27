@@ -1,0 +1,49 @@
+git diff - razlike između working directory-ja i staging_area
+git diff --staged - razlike između staging_area i repozitorija
+git diff //older_commit1// //newer_commit2// (shows new lines in commit2 as additions and removed lines as deletions)
+git show //commit// - shows the differences between a commit and its parent
+git log (popisd commitova s autorom, datumom i porukom)
+git log --stat (dodaje popis datoteka koje su mijenjane s brojem umetanja i brisanja)
+git clone //URL// povlaći lokalno GIT repozitorij
+git init - kreira novi repozitorij lokalno
+
+git restore --staged <file> - unstage a file
+git restore <file> - to discard changes in working directory
+
+git reset //filename// - If you accidentally add a file to the staging area, you can remove it using git reset
+git reset --hard - discards any changes in working directory or staging area
+
+git checkout master
+git checkout //commit//
+
+git add <file> - to update what will be committed)
+  
+git config --global color.ui auto (git config mijenja postavke u GIT-u, a --global flag znači da mijenja za sve projekte a ne samo za jedan)
+git config --global core.editor "C:/Program Files/Notepad++/notepad++.exe"
+git config --global push.default upstream
+git config --global merge.conflictstyle diff3
+git config --global core.autocrlf true
+git config --global credential.helper wincred
+
+git commit -m "poruka"
+
+git log --graph --oneline master coins
+
+git checkout -b new_branch_name - to je ekvivalent sljedećih naredbi:
+	git branch new_branch_name
+	git checkout new_branch_name
+
+git merge //list of branches separated by space// - always merges all the specified branches into the currently checked out branch, creating a new commit for that branch
+git merge --abort  - Restore your files to their state before you started the merge
+
+git remote - prikaz svih remotea
+git remote -v - prikaz svih remotea s URL-ovima
+git remote add //name// //URL// - dodaj novi remote (obično origin, ali može se i drugačije zvati)
+git remote remove //name// - uklanja remote
+git remote set-url origin new_url zamjena URL-a za postojeći remote
+
+git push //destrination remote//  //source branch ili commit//
+git pull //remote// //branch// ---> git fetch //remote//; git merge //branch// //remote/branch//
+git fetch //remote// - dohvaća izmjene s remote-a (za trenutni branch)
+
+FORK - samo kopija na GitHUB-u 
